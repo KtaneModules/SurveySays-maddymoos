@@ -11,17 +11,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 615501dbe4f3fe94fbf4b564abb10237, type: 3}
   m_Name: ModConfig
   m_EditorClassIdentifier: 
-  id: startingLine
-  title: The Starting Line
+  id: surveySays
+  title: Survey Says
   author: Cooldoom5
-  description: 'This is the story of a girl...
+  description: 'I bet you never thought about which modules used "port plates" and
+    not just ports.
 
 
-    The module displays the first line of another module. Figure out which module
-    it is, and press the letters in order.
+    Using pairs of colors and encoded flashes, find which module is being described,
+    then submit its name.
 
 
-    Manual can be found at: https://ktane.timwi.de'
-  version: 1.1.1
+    oh btw this only supports centi modules but. i''ll open source so. yall can add
+    more if you want. figured centi was a good start.
+
+
+    Manual can be found at: https://ktane.timwi.de/'
+  version: 1.0
   outputFolder: E:\Setam\steamapps\common\Keep Talking and Nobody Explodes\mods
-  previewImage: {fileID: 2800000, guid: 60a666dcf3ca4fb41ab7c55374611d61, type: 3}
+  previewImage: {fileID: 2800000, guid: cc4027ed5c7dd3d4596951898ca98530, type: 3}
