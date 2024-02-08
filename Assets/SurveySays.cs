@@ -554,6 +554,31 @@ public class SurveySays : MonoBehaviour
     {
 
     }
+
+#pragma warning disable 414
+    private readonly string TwitchHelpMessage = @"!{0} press TL BR [Press the Top-Left then the Bottom-Right buttons. Buttons are labelled, in reading order: TL, TR, BL, BR] Entering submission mode will cancel remaining commands. When submitting your answer, only 1 press will be accepted at a time.";
+#pragma warning restore 414
+
+    private string[] positions = new string[] { "TL", "TR", "BL", "BR" };
+
+    private IEnumerator ProcessTwitchCommand(string command)
+    {
+        command = command.Trim();
+        if (Regex.IsMatch(command, @"^press(\s+[TB][LR])+$"))
+        {
+            int[] pos = command.Split(' ').Where(p => !string.IsNullOrEmpty(p)).Skip(1).Select(p => Array.IndexOf(positions,p)).ToArray();
+            if (Submission && pos.Length != 1) yield break;
+            yield return null;
+            foreach (int p in pos)
+            {
+                Buttons[p].OnInteract();
+                yield return new WaitForSecondsRealtime(.1f);
+                Buttons[p].OnInteractEnded();
+                yield return new WaitUntil(() => Go);
+                if (Submission) yield break;
+            }
+        }
+    }
 }
 public class Module
 {
