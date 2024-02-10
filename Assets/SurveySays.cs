@@ -621,6 +621,24 @@ public class SurveySays : MonoBehaviour
                         }
                     }
                 }
+                else //Already queried something
+                {
+                    Debug.Log(Input);
+                    Debug.Log(Last);
+                    if (string.IsNullOrEmpty(Input)) //No current input
+                    {
+                        yield return PressButton(int.Parse(ColorOrder.IndexOf(Last[0]).ToString()));
+                        yield return new WaitUntil(() => Go);
+                        yield return PressButton(int.Parse(ColorOrder.IndexOf(Last[1]).ToString()));
+                        yield return new WaitUntil(() => Go);
+                    }
+                    else //First press already in.
+                    {
+                        //It actually doesn't matter if Last and Input matches here, I still have to press a button
+                        yield return PressButton(int.Parse(ColorOrder.IndexOf(Last[1]).ToString()));
+                        yield return new WaitUntil(() => Go);
+                    }
+                }
             }
         }
     }
