@@ -615,8 +615,8 @@ public class SurveySays : MonoBehaviour
 
     private IEnumerator ProcessTwitchCommand(string command)
     {
-        command = command.Trim();
-        if (Regex.IsMatch(command, @"^press(\s+[TB][LR])+$"))
+        command = command.Trim().ToUpper();
+        if (Regex.IsMatch(command, @"^PRESS(\s+[TB][LR])+$"))
         {
             int[] pos = command.Split(' ').Where(p => !string.IsNullOrEmpty(p)).Skip(1).Select(p => Array.IndexOf(positions,p)).ToArray();
             if (Submission && pos.Length != 1) yield break;
