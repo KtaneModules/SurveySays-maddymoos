@@ -529,6 +529,7 @@ public class SurveySays : MonoBehaviour
             }
             else if (!Selected.Name.StartsWith(Input) && (NameArray.Count < 1 || (NameArray[0].StartsWith(Input) && Input.Length >= 5)))
             {
+                Go = false;
                 Debug.LogFormat("[Survey Says #{0}]: {1} doesn't spell {2}... Strike! Regenerating.", moduleId, Input, Selected.FullName);
                 for (int k = 0; k < 4; k++)
                 {
@@ -569,6 +570,7 @@ public class SurveySays : MonoBehaviour
                     yield return new WaitForSeconds(0.02f);
                 }
                 Generate();
+                Go = true;
                 yield break;
             }
         }
@@ -603,6 +605,99 @@ public class SurveySays : MonoBehaviour
     void Update()
     {
 
+    }
+
+#pragma warning disable 414
+    private readonly string TwitchHelpMessage = @"!{0} press TL BR [Press the Top-Left then the Bottom-Right buttons. Buttons are labelled, in reading order: TL, TR, BL, BR] Entering submission mode will cancel remaining commands. When submitting your answer, only 1 press will be accepted at a time.";
+#pragma warning restore 414
+
+    private string[] positions = new string[] { "TL", "TR", "BL", "BR" };
+
+    private IEnumerator ProcessTwitchCommand(string command)
+    {
+        command = command.Trim();
+        if (Regex.IsMatch(command, @"^press(\s+[TB][LR])+$"))
+        {
+            int[] pos = command.Split(' ').Where(p => !string.IsNullOrEmpty(p)).Skip(1).Select(p => Array.IndexOf(positions,p)).ToArray();
+            if (Submission && pos.Length != 1) yield break;
+            yield return null;
+            foreach (int p in pos)
+            {
+                yield return PressButton(p);
+                yield return new WaitUntil(() => Go);
+                if (Submission) yield break;
+            }
+        }
+    }
+
+    private IEnumerator TwitchHandleForcedSolve()
+    {
+        while (!Solved)
+        {
+            yield return new WaitUntil(()=>Go);
+            if (Submission) //In submission phase
+            {
+                if (!Selected.Name.StartsWith(Input)) //It's fucked
+                {
+                    yield return new WaitUntil(() => Go); //It's really just in case, but it should be fine even without it... Maybe
+                    Generate(); //Doing this so eXish doesn't complain about the autosolver striking :) (And also it's not regenerating after the strike in its current state, but eh it's fine like that.)
+                    continue;
+                }
+                else
+                {
+                    yield return PressButton(Letters.IndexOf(Selected.Name[Input.Length]));
+                    yield return new WaitUntil(() => Go);
+                }
+            }
+            else //Not in submission phase
+            {
+                if (string.IsNullOrEmpty(Last)) //Haven't pressed anything yet
+                {
+                    if (string.IsNullOrEmpty(Input)) //No current input
+                    {
+                        for(int i = 0; i < 4; i++)
+                        {
+                            yield return PressButton(0);
+                            yield return new WaitUntil(() => Go);
+                        }
+                    }
+                    else //One press
+                    {
+                        int nb = int.Parse(Input[0].ToString());
+                        for(int i = 0; i<3; i++)
+                        {
+                            yield return PressButton(nb);
+                            yield return new WaitUntil(() => Go);
+                        }
+                    }
+                }
+                else //Already queried something
+                {
+                    Debug.Log(Input);
+                    Debug.Log(Last);
+                    if (string.IsNullOrEmpty(Input)) //No current input
+                    {
+                        yield return PressButton(int.Parse(ColorOrder.IndexOf(Last[0]).ToString()));
+                        yield return new WaitUntil(() => Go);
+                        yield return PressButton(int.Parse(ColorOrder.IndexOf(Last[1]).ToString()));
+                        yield return new WaitUntil(() => Go);
+                    }
+                    else //First press already in.
+                    {
+                        //It actually doesn't matter if Last and Input matches here, I still have to press a button
+                        yield return PressButton(int.Parse(ColorOrder.IndexOf(Last[1]).ToString()));
+                        yield return new WaitUntil(() => Go);
+                    }
+                }
+            }
+        }
+    }
+
+    private IEnumerator PressButton(int index)
+    {
+        Buttons[index].OnInteract();
+        yield return new WaitForSecondsRealtime(.1f);
+        Buttons[index].OnInteractEnded();
     }
 }
 public class EdgeworkModule
