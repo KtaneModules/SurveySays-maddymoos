@@ -1,939 +1,523 @@
 [
 {
-	Name:"WIRES",
-	EdgeworkBinary:"00010000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"2",
-	TimeModeScore:"2",
-	FullName:"Wires"
+ "Name":"WIRES",
+ "EdgeworkBinary":"00010000",
+ "FullName":"Wires"
 },
 {
-	Name:"THEBUTTON",
-	EdgeworkBinary:"10100001",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"2",
-	TimeModeScore:"2",
-	FullName:"The Button"
+ "Name":"THEBUTTON",
+ "EdgeworkBinary":"10100001",
+ "FullName":"The Button"
 },
 {
-	Name:"COMPLICATEDWIRES",
-	EdgeworkBinary:"11010000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"4",
-	TimeModeScore:"2",
-	FullName:"Complicated Wires"
+ "Name":"COMPLICATEDWIRES",
+ "EdgeworkBinary":"11010000",
+ "FullName":"Complicated Wires"
 },
 {
-	Name:"KEYPAD",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"2",
-	TimeModeScore:"2",
-	FullName:"Keypad"
+ "Name":"KEYPAD",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Keypad"
 },
 {
-	Name:"MAZE",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"1",
-	TPScore:"2",
-	TimeModeScore:"2",
-	FullName:"Maze"
+ "Name":"MAZE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Maze"
 },
 {
-	Name:"MEMORY",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"1",
-	TPScore:"3",
-	TimeModeScore:"3",
-	FullName:"Memory"
+ "Name":"MEMORY",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Memory"
 },
 {
-	Name:"PASSWORD",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"1",
-	TPScore:"3",
-	TimeModeScore:"2",
-	FullName:"Password"
+ "Name":"PASSWORD",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Password"
 },
 {
-	Name:"MORSECODE",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"1",
-	TPScore:"4",
-	TimeModeScore:"3",
-	FullName:"Morse Code"
+ "Name":"MORSECODE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Morse Code"
 },
 {
-	Name:"SIMONSAYS",
-	EdgeworkBinary:"00010001",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"3",
-	TimeModeScore:"2",
-	FullName:"Simon Says"
+ "Name":"SIMONSAYS",
+ "EdgeworkBinary":"00010001",
+ "FullName":"Simon Says"
 },
 {
-	Name:"WHOSONFIRST",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"1",
-	TPScore:"5",
-	TimeModeScore:"3",
-	FullName:"Who's on First"
+ "Name":"WHOSONFIRST",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Who's on First"
 },
 {
-	Name:"WIRESEQUENCE",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"2",
-	TPScore:"4",
-	TimeModeScore:"3",
-	FullName:"Wire Sequence"
+ "Name":"WIRESEQUENCE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Wire Sequence"
 },
 {
-	Name:"COLOURFLASH",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"1",
-	TPScore:"5",
-	TimeModeScore:"5",
-	FullName:"Colour Flash"
+ "Name":"COLOURFLASH",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Colour Flash"
 },
 {
-	Name:"PIANOKEYS",
-	EdgeworkBinary:"11111000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"1",
-	TPScore:"4",
-	TimeModeScore:"3",
-	FullName:"Piano Keys"
+ "Name":"PIANOKEYS",
+ "EdgeworkBinary":"11111000",
+ "FullName":"Piano Keys"
 },
 {
-	Name:"SEMAPHORE",
-	EdgeworkBinary:"00010000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"2",
-	TPScore:"5",
-	TimeModeScore:"6",
-	FullName:"Semaphore"
+ "Name":"SEMAPHORE",
+ "EdgeworkBinary":"00010000",
+ "FullName":"Semaphore"
 },
 {
-	Name:"EMOJIMATH",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"3",
-	TimeModeScore:"3",
-	FullName:"Emoji Math"
+ "Name":"EMOJIMATH",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Emoji Math"
 },
 {
-	Name:"SWITCHES",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"2",
-	TPScore:"5",
-	TimeModeScore:"3",
-	FullName:"Switches"
+ "Name":"SWITCHES",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Switches"
 },
 {
-	Name:"TWOBITS",
-	EdgeworkBinary:"11010000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"1",
-	TPScore:"5",
-	TimeModeScore:"6",
-	FullName:"Two Bits"
+ "Name":"TWOBITS",
+ "EdgeworkBinary":"11010000",
+ "FullName":"Two Bits"
 },
 {
-	Name:"WORDSCRAMBLE",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"2",
-	TimeModeScore:"1",
-	FullName:"Word Scramble"
+ "Name":"WORDSCRAMBLE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Word Scramble"
 },
 {
-	Name:"ANAGRAMS",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"2",
-	TimeModeScore:"1",
-	FullName:"Anagrams"
+ "Name":"ANAGRAMS",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Anagrams"
 },
 {
-	Name:"COMBINATIONLOCK",
-	EdgeworkBinary:"10010010",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"5",
-	TimeModeScore:"4",
-	FullName:"Combination Lock"
+ "Name":"COMBINATIONLOCK",
+ "EdgeworkBinary":"10010010",
+ "FullName":"Combination Lock"
 },
 {
-	Name:"ROUNDKEYPAD",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"1",
-	TPScore:"5",
-	TimeModeScore:"6",
-	FullName:"Round Keypad"
+ "Name":"ROUNDKEYPAD",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Round Keypad"
 },
 {
-	Name:"LISTENING",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"1",
-	TPScore:"5",
-	TimeModeScore:"4",
-	FullName:"Listening"
+ "Name":"LISTENING",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Listening"
 },
 {
-	Name:"FOREIGNEXCHANGERATES",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"3",
-	TimeModeScore:"5",
-	FullName:"Foreign Exchange Rates"
+ "Name":"FOREIGNEXCHANGERATES",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Foreign Exchange Rates"
 },
 {
-	Name:"ORIENTATIONCUBE",
-	EdgeworkBinary:"11110001",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"2",
-	TPScore:"7",
-	TimeModeScore:"8",
-	FullName:"Orientation Cube"
+ "Name":"ORIENTATIONCUBE",
+ "EdgeworkBinary":"11110001",
+ "FullName":"Orientation Cube"
 },
 {
-	Name:"MORSEMATICS",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"3",
-	ExpertDifficulty:"3",
-	TPScore:"10",
-	TimeModeScore:"10",
-	FullName:"Morsematics"
+ "Name":"MORSEMATICS",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Morsematics"
 },
 {
-	Name:"CONNECTIONCHECK",
-	EdgeworkBinary:"10010000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"1",
-	TPScore:"5",
-	TimeModeScore:"6",
-	FullName:"Connection Check"
+ "Name":"CONNECTIONCHECK",
+ "EdgeworkBinary":"10010000",
+ "FullName":"Connection Check"
 },
 {
-	Name:"LETTERKEYS",
-	EdgeworkBinary:"10010000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"2",
-	TimeModeScore:"2",
-	FullName:"Letter Keys"
+ "Name":"LETTERKEYS",
+ "EdgeworkBinary":"10010000",
+ "FullName":"Letter Keys"
 },
 {
-	Name:"ASTROLOGY",
-	EdgeworkBinary:"00010001",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"2",
-	TPScore:"6",
-	TimeModeScore:"7",
-	FullName:"Astrology"
+ "Name":"ASTROLOGY",
+ "EdgeworkBinary":"00010001",
+ "FullName":"Astrology"
 },
 {
-	Name:"LOGIC",
-	EdgeworkBinary:"11111000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"3",
-	TPScore:"7",
-	TimeModeScore:"10",
-	FullName:"Logic"
+ "Name":"LOGIC",
+ "EdgeworkBinary":"11111000",
+ "FullName":"Logic"
 },
 {
-	Name:"MYSTICSQUARE",
-	EdgeworkBinary:"00010000",
-	DefuserDifficulty:"3",
-	ExpertDifficulty:"2",
-	TPScore:"9",
-	TimeModeScore:"8",
-	FullName:"Mystic Square"
+ "Name":"MYSTICSQUARE",
+ "EdgeworkBinary":"00010000",
+ "FullName":"Mystic Square"
 },
 {
-	Name:"CRAZYTALK",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"0",
-	TPScore:"2",
-	TimeModeScore:"4",
-	FullName:"Crazy Talk"
+ "Name":"CRAZYTALK",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Crazy Talk"
 },
 {
-	Name:"ADVENTUREGAME",
-	EdgeworkBinary:"11110000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"2",
-	TPScore:"8",
-	TimeModeScore:"10",
-	FullName:"Adventure Game"
+ "Name":"ADVENTUREGAME",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Adventure Game"
 },
 {
-	Name:"TURNTHEKEY",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"0",
-	TPScore:"2",
-	TimeModeScore:"4",
-	FullName:"Turn The Key"
+ "Name":"TURNTHEKEY",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Turn The Key"
 }
 ,
 {
-	Name:"PLUMBING",
-	EdgeworkBinary:"11010000",
-	DefuserDifficulty:"3",
-	ExpertDifficulty:"2",
-	TPScore:"12",
-	TimeModeScore:"10",
-	FullName:"Plumbing"
-},
-{
-	Name:"CRUELPIANOKEYS",
-	EdgeworkBinary:"11111101",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"3",
-	TPScore:"10",
-	TimeModeScore:"13",
-	FullName:"Cruel Piano Keys"
-},
-{
-	Name:"SAFETYSAFE",
-	EdgeworkBinary:"01110000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"2",
-	TPScore:"10",
-	TimeModeScore:"9",
-	FullName:"Safety Safe"
-},
-{
-	Name:"CRYPTOGRAPHY",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"3",
-	TPScore:"8",
-	TimeModeScore:"10",
-	FullName:"Cryptography"
-},
-{
-	Name:"CHESS",
-	EdgeworkBinary:"00010000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"2",
-	TPScore:"8",
-	TimeModeScore:"9",
-	FullName:"Chess"
-},
-{
-	Name:"TURNTHEKEYS",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"1",
-	TPScore:"3",
-	TimeModeScore:"5",
-	FullName:"Turn The Keys"
-},
-{
-	Name:"MOUSEINTHEMAZE",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"2",
-	TPScore:"9",
-	TimeModeScore:"9",
-	FullName:"Mouse In The Maze"
-},
-{
-	Name:"3DMAZE",
-	EdgeworkBinary:"00110000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"2",
-	TPScore:"11",
-	TimeModeScore:"10",
-	FullName:"3D Maze"
-},
-{
-	Name:"SILLYSLOTS",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"3",
-	TPScore:"9",
-	TimeModeScore:"12",
-	FullName:"Silly Slots"
-},
-{
-	Name:"SIMONSTATES",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"1",
-	TPScore:"5",
-	TimeModeScore:"6",
-	FullName:"Simon States"
-},
-{
-	Name:"NUMBERPAD",
-	EdgeworkBinary:"11010000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"3",
-	TPScore:"8",
-	TimeModeScore:"10",
-	FullName:"Number Pad"
-},
-{
-	Name:"LAUNDRY",
-	EdgeworkBinary:"11111000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"3",
-	TPScore:"10",
-	TimeModeScore:"10",
-	FullName:"Laundry"
-},
-{
-	Name:"PROBING",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"2",
-	TPScore:"4",
-	TimeModeScore:"7",
-	FullName:"Probing"
-},
-{
-	Name:"ALPHABET",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"2",
-	TimeModeScore:"2",
-	FullName:"Alphabet"
-},
-{
-	Name:"CAESARCIPHER",
-	EdgeworkBinary:"11110000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"3",
-	TimeModeScore:"4",
-	FullName:"Caesar Cipher"
-},
-{
-	Name:"RESISTORS",
-	EdgeworkBinary:"10110000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"2",
-	TPScore:"7",
-	TimeModeScore:"8",
-	FullName:"Resistors"
-},
-{
-	Name:"SKEWEDSLOTS",
-	EdgeworkBinary:"11110000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"3",
-	TPScore:"8",
-	TimeModeScore:"7",
-	FullName:"Skewed Slots"
-},
-{
-	Name:"PERSPECTIVEPEGS",
-	EdgeworkBinary:"10010000",
-	DefuserDifficulty:"3",
-	ExpertDifficulty:"2",
-	TPScore:"9",
-	TimeModeScore:"8",
-	FullName:"Perspective Pegs"
-},
-{
-	Name:"MICROCONTROLLER",
-	EdgeworkBinary:"11110000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"2",
-	TPScore:"7",
-	TimeModeScore:"9",
-	FullName:"Microcontroller"
-},
-{
-	Name:"MURDER",
-	EdgeworkBinary:"11100000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"2",
-	TPScore:"8",
-	TimeModeScore:"7",
-	FullName:"Murder"
-},
-{
-	Name:"THEGAMEPAD",
-	EdgeworkBinary:"11110000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"2",
-	TPScore:"7",
-	TimeModeScore:"7",
-	FullName:"The Gamepad"
-},
-{
-	Name:"TICTACTOE",
-	EdgeworkBinary:"01110000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"3",
-	TPScore:"9",
-	TimeModeScore:"11",
-	FullName:"Tic Tac Toe"
-},
-{
-	Name:"MONSPLODEFIGHT",
-	EdgeworkBinary:"11111001",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"3",
-	TPScore:"6",
-	TimeModeScore:"8",
-	FullName:"Monsplode, Fight!"
-},
-{
-	Name:"SHAPESHIFT",
-	EdgeworkBinary:"11110000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"2",
-	TPScore:"5",
-	TimeModeScore:"6",
-	FullName:"Shape Shift"
-},
-{
-	Name:"FOLLOWTHELEADER",
-	EdgeworkBinary:"11110000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"2",
-	TPScore:"8",
-	TimeModeScore:"8",
-	FullName:"Follow the Leader"
-},
-{
-	Name:"FRIENDSHIP",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"2",
-	TPScore:"8",
-	TimeModeScore:"9",
-	FullName:"Friendship"
-},
-{
-	Name:"THEBULB",
-	EdgeworkBinary:"00100000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"1",
-	TPScore:"5",
-	TimeModeScore:"6",
-	FullName:"The Bulb"
-},
-{
-	Name:"BLINDALLEY",
-	EdgeworkBinary:"11111000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"5",
-	TimeModeScore:"6",
-	FullName:"Blind Alley"
-},
-{
-	Name:"SEASHELLS",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"2",
-	TPScore:"7",
-	TimeModeScore:"9",
-	FullName:"Sea Shells"
-},
-{
-	Name:"ENGLISHTEST",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"0",
-	TPScore:"4",
-	TimeModeScore:"4",
-	FullName:"English Test"
-},
-{
-	Name:"ROCKPAPERSCISSORSLIZARDSPOCK",
-	EdgeworkBinary:"01110000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"1",
-	TPScore:"6",
-	TimeModeScore:"5",
-	FullName:"Rock-Paper-Scissors-Lizard-Spock"
-},
-{
-	Name:"SQUAREBUTTON",
-	EdgeworkBinary:"10110001",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"1",
-	TPScore:"7",
-	TimeModeScore:"5",
-	FullName:"Square Button"
-},
-{
-	Name:"HEXAMAZE",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"3",
-	TPScore:"9",
-	TimeModeScore:"8",
-	FullName:"Hexamaze"
-},
-{
-	Name:"BITMAPS",
-	EdgeworkBinary:"11110000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"1",
-	TPScore:"7",
-	TimeModeScore:"8",
-	FullName:"Bitmaps"
-},
-{
-	Name:"COLOREDSQUARES",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"0",
-	TPScore:"6",
-	TimeModeScore:"5",
-	FullName:"Colored Squares"
-},
-{
-	Name:"ADJACENTLETTERS",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"2",
-	TPScore:"7",
-	TimeModeScore:"10",
-	FullName:"Adjacent Letters"
-},
-{
-	Name:"THIRDBASE",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"3",
-	ExpertDifficulty:"3",
-	TPScore:"8",
-	TimeModeScore:"9",
-	FullName:"Third Base"
-},
-{
-	Name:"WORDSEARCH",
-	EdgeworkBinary:"00010000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"1",
-	TPScore:"6",
-	TimeModeScore:"6",
-	FullName:"Word Search"
-},
-{
-	Name:"BROKENBUTTONS",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"3",
-	ExpertDifficulty:"1",
-	TPScore:"8",
-	TimeModeScore:"9",
-	FullName:"Broken Buttons"
-},
-{
-	Name:"SIMONSCREAMS",
-	EdgeworkBinary:"11111000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"3",
-	TPScore:"8",
-	TimeModeScore:"8",
-	FullName:"Simon Screams"
-},
-{
-	Name:"MODULESAGAINSTHUMANITY",
-	EdgeworkBinary:"11110000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"1",
-	TPScore:"7",
-	TimeModeScore:"8",
-	FullName:"Modules Against Humanity"
-},
-{
-	Name:"COMPLICATEDBUTTONS",
-	EdgeworkBinary:"11011000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"1",
-	TPScore:"4",
-	TimeModeScore:"6",
-	FullName:"Complicated Buttons"
-},
-{
-	Name:"BATTLESHIP",
-	EdgeworkBinary:"11110000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"3",
-	TPScore:"7",
-	TimeModeScore:"8",
-	FullName:"Battleship"
-},
-{
-	Name:"TEXTFIELD",
-	EdgeworkBinary:"11110000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"1",
-	TPScore:"3",
-	TimeModeScore:"4",
-	FullName:"Text Field"
-},
-{
-	Name:"SYMBOLICPASSWORD",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"1",
-	TPScore:"5",
-	TimeModeScore:"4",
-	FullName:"Symbolic Password"
-},
-{
-	Name:"WIREPLACEMENT",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"1",
-	TPScore:"4",
-	TimeModeScore:"3",
-	FullName:"Wire Placement"
-},
-{
-	Name:"DOUBLEOH",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"1",
-	TPScore:"7",
-	TimeModeScore:"5",
-	FullName:"Double-Oh"
-},
-{
-	Name:"CHEAPCHECKOUT",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"3",
-	TPScore:"10",
-	TimeModeScore:"10",
-	FullName:"Cheap Checkout"
-},
-{
-	Name:"COORDINATES",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"2",
-	TPScore:"9",
-	TimeModeScore:"11",
-	FullName:"Coordinates"
-},
-{
-	Name:"LIGHTCYCLE",
-	EdgeworkBinary:"00010000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"3",
-	TPScore:"9",
-	TimeModeScore:"9",
-	FullName:"Light Cycle"
-},
-{
-	Name:"RHYTHMS",
-	EdgeworkBinary:"10100000",
-	DefuserDifficulty:"3",
-	ExpertDifficulty:"2",
-	TPScore:"8",
-	TimeModeScore:"8",
-	FullName:"Rhythms"
-},
-{
-	Name:"COLORMATH",
-	EdgeworkBinary:"11111000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"2",
-	TPScore:"7",
-	TimeModeScore:"8",
-	FullName:"Color Math"
-},
-{
-	Name:"ONLYCONNECT",
-	EdgeworkBinary:"01010000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"3",
-	TPScore:"9",
-	TimeModeScore:"12",
-	FullName:"Only Connect"
-},
-{
-	Name:"NEUTRALIZATION",
-	EdgeworkBinary:"11111000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"3",
-	TPScore:"9",
-	TimeModeScore:"10",
-	FullName:"Neutralization"
-},
-{
-	Name:"WEBDESIGN",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"3",
-	TPScore:"10",
-	TimeModeScore:"12",
-	FullName:"Web Design"
-},
-{
-	Name:"CHORDQUALITIES",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"3",
-	TPScore:"8",
-	TimeModeScore:"9",
-	FullName:"Chord Qualities"
-},
-{
-	Name:"CREATION",
-	EdgeworkBinary:"11101100",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"1",
-	TPScore:"8",
-	TimeModeScore:"7",
-	FullName:"Creation"
-},
-{
-	Name:"RUBIKSCUBE",
-	EdgeworkBinary:"00010000",
-	DefuserDifficulty:"3",
-	ExpertDifficulty:"3",
-	TPScore:"10",
-	TimeModeScore:"10",
-	FullName:"Rubik's Cube"
-},
-{
-	Name:"FIZZBUZZ",
-	EdgeworkBinary:"11011001",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"1",
-	TPScore:"7",
-	TimeModeScore:"10",
-	FullName:"English Test"
-},
-{
-	Name:"THECLOCK",
-	EdgeworkBinary:"00000001",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"1",
-	TPScore:"6",
-	TimeModeScore:"6",
-	FullName:"The Clock"
-},
-{
-	Name:"LEDENCRYPTION",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"2",
-	TPScore:"6",
-	TimeModeScore:"8",
-	FullName:"LED Encryption"
-},
-{
-	Name:"BITWISEOPERATIONS",
-	EdgeworkBinary:"11110001",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"1",
-	TPScore:"5",
-	TimeModeScore:"7",
-	FullName:"Bitwise Operations"
-},
-{
-	Name:"FASTMATH",
-	EdgeworkBinary:"11110000",
-	DefuserDifficulty:"0",
-	ExpertDifficulty:"2",
-	TPScore:"7",
-	TimeModeScore:"9",
-	FullName:"Fast Math"
-},
-{
-	Name:"ZOO",
-	EdgeworkBinary:"01000000",
-	DefuserDifficulty:"4",
-	ExpertDifficulty:"3",
-	TPScore:"8",
-	TimeModeScore:"8",
-	FullName:"Zoo"
-},
-{
-	Name:"MINESWEEPER",
-	EdgeworkBinary:"00010000",
-	DefuserDifficulty:"3",
-	ExpertDifficulty:"1",
-	TPScore:"11",
-	TimeModeScore:"7",
-	FullName:"Minesweeper"
-},
-{
-	Name:"BINARYLEDS",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"3",
-	ExpertDifficulty:"2",
-	TPScore:"7",
-	TimeModeScore:"8",
-	FullName:"Binary LEDs"
-},
-{
-	Name:"BOOLEANVENNDIAGRAM",
-	EdgeworkBinary:"00000000",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"3",
-	TPScore:"6",
-	TimeModeScore:"5",
-	FullName:"Boolean Venn Diagram"
-},
-{
-	Name:"POINTOFORDER",
-	EdgeworkBinary:"00010000",
-	DefuserDifficulty:"2",
-	ExpertDifficulty:"3",
-	TPScore:"6",
-	TimeModeScore:"8",
-	FullName:"Point of Order"
-},
-{
-	Name:"ICECREAM",
-	EdgeworkBinary:"10110100",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"2",
-	TPScore:"8",
-	TimeModeScore:"9",
-	FullName:"Ice Cream"
-},
-{
-	Name:"THESCREW",
-	EdgeworkBinary:"11111100",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"2",
-	TPScore:"7",
-	TimeModeScore:"10",
-	FullName:"The Screw"
-},
-{
-	Name:"YAHTZEE",
-	EdgeworkBinary:"11111100",
-	DefuserDifficulty:"1",
-	ExpertDifficulty:"2",
-	TPScore:"7",
-	TimeModeScore:"8",
-	FullName:"Yahtzee"
+ "Name":"PLUMBING",
+ "EdgeworkBinary":"11010000",
+ "FullName":"Plumbing"
+},
+{
+ "Name":"CRUELPIANOKEYS",
+ "EdgeworkBinary":"11111101",
+ "FullName":"Cruel Piano Keys"
+},
+{
+ "Name":"SAFETYSAFE",
+ "EdgeworkBinary":"01110000",
+ "FullName":"Safety Safe"
+},
+{
+ "Name":"CRYPTOGRAPHY",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Cryptography"
+},
+{
+ "Name":"CHESS",
+ "EdgeworkBinary":"00010000",
+ "FullName":"Chess"
+},
+{
+ "Name":"TURNTHEKEYS",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Turn The Keys"
+},
+{
+ "Name":"MOUSEINTHEMAZE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Mouse In The Maze"
+},
+{
+ "Name":"3DMAZE",
+ "EdgeworkBinary":"00110000",
+ "FullName":"3D Maze"
+},
+{
+ "Name":"SILLYSLOTS",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Silly Slots"
+},
+{
+ "Name":"SIMONSTATES",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Simon States"
+},
+{
+ "Name":"NUMBERPAD",
+ "EdgeworkBinary":"11010000",
+ "FullName":"Number Pad"
+},
+{
+ "Name":"LAUNDRY",
+ "EdgeworkBinary":"11111000",
+ "FullName":"Laundry"
+},
+{
+ "Name":"PROBING",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Probing"
+},
+{
+ "Name":"ALPHABET",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Alphabet"
+},
+{
+ "Name":"CAESARCIPHER",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Caesar Cipher"
+},
+{
+ "Name":"RESISTORS",
+ "EdgeworkBinary":"10110000",
+ "FullName":"Resistors"
+},
+{
+ "Name":"SKEWEDSLOTS",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Skewed Slots"
+},
+{
+ "Name":"PERSPECTIVEPEGS",
+ "EdgeworkBinary":"10010000",
+ "FullName":"Perspective Pegs"
+},
+{
+ "Name":"MICROCONTROLLER",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Microcontroller"
+},
+{
+ "Name":"MURDER",
+ "EdgeworkBinary":"11100000",
+ "FullName":"Murder"
+},
+{
+ "Name":"THEGAMEPAD",
+ "EdgeworkBinary":"11110000",
+ "FullName":"The Gamepad"
+},
+{
+ "Name":"TICTACTOE",
+ "EdgeworkBinary":"01110000",
+ "FullName":"Tic Tac Toe"
+},
+{
+ "Name":"MONSPLODEFIGHT",
+ "EdgeworkBinary":"11111001",
+ "FullName":"Monsplode, Fight!"
+},
+{
+ "Name":"SHAPESHIFT",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Shape Shift"
+},
+{
+ "Name":"FOLLOWTHELEADER",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Follow the Leader"
+},
+{
+ "Name":"FRIENDSHIP",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Friendship"
+},
+{
+ "Name":"THEBULB",
+ "EdgeworkBinary":"00100000",
+ "FullName":"The Bulb"
+},
+{
+ "Name":"BLINDALLEY",
+ "EdgeworkBinary":"11111000",
+ "FullName":"Blind Alley"
+},
+{
+ "Name":"SEASHELLS",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Sea Shells"
+},
+{
+ "Name":"ENGLISHTEST",
+ "EdgeworkBinary":"00000000",
+ "FullName":"English Test"
+},
+{
+ "Name":"ROCKPAPERSCISSORSLIZARDSPOCK",
+ "EdgeworkBinary":"01110000",
+ "FullName":"Rock-Paper-Scissors-Lizard-Spock"
+},
+{
+ "Name":"SQUAREBUTTON",
+ "EdgeworkBinary":"10110001",
+ "FullName":"Square Button"
+},
+{
+ "Name":"HEXAMAZE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Hexamaze"
+},
+{
+ "Name":"BITMAPS",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Bitmaps"
+},
+{
+ "Name":"COLOREDSQUARES",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Colored Squares"
+},
+{
+ "Name":"ADJACENTLETTERS",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Adjacent Letters"
+},
+{
+ "Name":"THIRDBASE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Third Base"
+},
+{
+ "Name":"WORDSEARCH",
+ "EdgeworkBinary":"00010000",
+ "FullName":"Word Search"
+},
+{
+ "Name":"BROKENBUTTONS",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Broken Buttons"
+},
+{
+ "Name":"SIMONSCREAMS",
+ "EdgeworkBinary":"11111000",
+ "FullName":"Simon Screams"
+},
+{
+ "Name":"MODULESAGAINSTHUMANITY",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Modules Against Humanity"
+},
+{
+ "Name":"COMPLICATEDBUTTONS",
+ "EdgeworkBinary":"11011000",
+ "FullName":"Complicated Buttons"
+},
+{
+ "Name":"BATTLESHIP",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Battleship"
+},
+{
+ "Name":"TEXTFIELD",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Text Field"
+},
+{
+ "Name":"SYMBOLICPASSWORD",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Symbolic Password"
+},
+{
+ "Name":"WIREPLACEMENT",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Wire Placement"
+},
+{
+ "Name":"DOUBLEOH",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Double-Oh"
+},
+{
+ "Name":"CHEAPCHECKOUT",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Cheap Checkout"
+},
+{
+ "Name":"COORDINATES",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Coordinates"
+},
+{
+ "Name":"LIGHTCYCLE",
+ "EdgeworkBinary":"00010000",
+ "FullName":"Light Cycle"
+},
+{
+ "Name":"RHYTHMS",
+ "EdgeworkBinary":"10100000",
+ "FullName":"Rhythms"
+},
+{
+ "Name":"COLORMATH",
+ "EdgeworkBinary":"11111000",
+ "FullName":"Color Math"
+},
+{
+ "Name":"ONLYCONNECT",
+ "EdgeworkBinary":"01010000",
+ "FullName":"Only Connect"
+},
+{
+ "Name":"NEUTRALIZATION",
+ "EdgeworkBinary":"11111000",
+ "FullName":"Neutralization"
+},
+{
+ "Name":"WEBDESIGN",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Web Design"
+},
+{
+ "Name":"CHORDQUALITIES",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Chord Qualities"
+},
+{
+ "Name":"CREATION",
+ "EdgeworkBinary":"11101100",
+ "FullName":"Creation"
+},
+{
+ "Name":"RUBIKSCUBE",
+ "EdgeworkBinary":"00010000",
+ "FullName":"Rubik's Cube"
+},
+{
+ "Name":"FIZZBUZZ",
+ "EdgeworkBinary":"11011001",
+ "FullName":"Fizzbuzz"
+},
+{
+ "Name":"THECLOCK",
+ "EdgeworkBinary":"00000001",
+ "FullName":"The Clock"
+},
+{
+ "Name":"LEDENCRYPTION",
+ "EdgeworkBinary":"00000000",
+ "FullName":"LED Encryption"
+},
+{
+ "Name":"BITWISEOPERATIONS",
+ "EdgeworkBinary":"11110001",
+ "FullName":"Bitwise Operations"
+},
+{
+ "Name":"FASTMATH",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Fast Math"
+},
+{
+ "Name":"ZOO",
+ "EdgeworkBinary":"01000000",
+ "FullName":"Zoo"
+},
+{
+ "Name":"MINESWEEPER",
+ "EdgeworkBinary":"00010000",
+ "FullName":"Minesweeper"
+},
+{
+ "Name":"BINARYLEDS",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Binary LEDs"
+},
+{
+ "Name":"BOOLEANVENNDIAGRAM",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Boolean Venn Diagram"
+},
+{
+ "Name":"POINTOFORDER",
+ "EdgeworkBinary":"00010000",
+ "FullName":"Point of Order"
+},
+{
+ "Name":"ICECREAM",
+ "EdgeworkBinary":"10110100",
+ "FullName":"Ice Cream"
+},
+{
+ "Name":"THESCREW",
+ "EdgeworkBinary":"11111100",
+ "FullName":"The Screw"
+},
+{
+ "Name":"YAHTZEE",
+ "EdgeworkBinary":"11111100",
+ "FullName":"Yahtzee"
 }
 ]

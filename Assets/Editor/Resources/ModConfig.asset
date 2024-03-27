@@ -27,6 +27,6 @@ MonoBehaviour:
 
 
     Manual can be found at: https://ktane.timwi.de/'
-  version: 1.0
+  version: 1.2.1
   outputFolder: E:\Setam\steamapps\common\Keep Talking and Nobody Explodes\mods
   previewImage: {fileID: 2800000, guid: cc4027ed5c7dd3d4596951898ca98530, type: 3}

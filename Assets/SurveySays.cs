@@ -24,27 +24,32 @@ public class SurveySays : MonoBehaviour
     public TextMesh[] Text;
     public Light[] Light;
 
-    static private int _moduleIdCounter = 1;
-    private int moduleId;
+    static private int _moduleIdCounter = 1, dumb = 0;
+    private int moduleId, idiot;
 
     private string ColorOrder = "0123"; // Defines order of colors on the module.
     private string RndOrder = "0123";
     private static readonly string ColorVals = "ROVJ";
     private static readonly string[] ColorNames = {"rose", "orange", "violet", "jade"};
-    private static readonly string[] difficulty = {"3", "1", "2", "0", "0123"};
-    private static readonly string[] difficultyNames = {"very easy", "easy", "medium", "hard", "very hard"};
+    private static readonly string[] difficulty = {"3", "23", "2", "12", "1", "01", "0"};
+    private static readonly string[] difficultyNames = {"trivial", "very easy", "easy", "medium", "hard", "very hard", "extreme"};
+    private static readonly string[] repodiffs = {"trivial", "veryeasy", "easy", "medium", "hard", "veryhard", "extreme"};
     private static readonly string Alphabet = " ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static readonly string Chars = "0123456789EEEEEEEEEEEEAAAAAAAAAIIIIIIIIIOOOOOOOONNNNNNRRRRRRTTTTTTLLLLSSSSUUUUDDDDGGGBBCCMMPPFFHHVVWWYYKJXQZ";
     private static readonly string Vowels = "AEIOU";
     private string Input, Last, Typing, Letters;
     private bool Submission, Go = true, Solved;
-    private Module Selected;
+    private EdgeworkModule Selected;
+    private RepoModule SelectedRepo;
     private List<string> NameArray = new List<string> { };
-    private List<Module> AllMods;
+    private List<EdgeworkModule> EdgeworkModule;
+    private List<RepoModule> RepoModule;
+    private WWW Fetch;
 
     void Awake()
     {
         moduleId = _moduleIdCounter++;
+        idiot = dumb++;
         for(int i =0; i < 4; i++)
         {
             KMSelectable btn = Buttons[i];
@@ -65,6 +70,10 @@ public class SurveySays : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        if(idiot == 0)
+        {
+            StartCoroutine(FetchModules());
+        }
         ColorOrder = ColorOrder.ToCharArray().Shuffle().Join("");
         for(int i = 0; i < 4; i++)
         {
@@ -76,8 +85,8 @@ public class SurveySays : MonoBehaviour
             float scalar = transform.lossyScale.x;
             Light[i].range *= scalar;
         }
-        AllMods = JsonConvert.DeserializeObject<List<Module>>(JSON.ToString());
-        Debug.LogFormat("[Survey Says #{0}]: I currently support {1} modules! If you want to see more, why not help add some?", moduleId, AllMods.Count());
+        EdgeworkModule = JsonConvert.DeserializeObject<List<EdgeworkModule>>(JSON.ToString());
+        Debug.LogFormat("[Survey Says #{0}]: I currently support {1} modules! If you want to see more, why not help add some?", moduleId, EdgeworkModule.Count());
         Generate();
     }
     void Generate()
@@ -87,11 +96,11 @@ public class SurveySays : MonoBehaviour
         {
             Text[i].text = "";
         }
-        foreach (Module mod in AllMods)
+        foreach (EdgeworkModule mod in EdgeworkModule)
         {
             NameArray.Add(mod.Name);
         }
-        Selected = AllMods[Rnd.Range(0, AllMods.Count())];
+        Selected = EdgeworkModule[Rnd.Range(0, EdgeworkModule.Count())];
         NameArray.Remove(Selected.Name);
         Debug.LogFormat("[Survey Says #{0}]: Today we will be surveying the module {1}.", moduleId, Selected.FullName);
         Last = "";
@@ -120,6 +129,10 @@ public class SurveySays : MonoBehaviour
         }
         if (!Submission && Input.Length == 2)
         {
+            if(SelectedRepo == null)
+            {
+                SelectedRepo = RepoModules.Where(x => x.Name == Selected.FullName).First();
+            }
             Last = Input;
             Debug.LogFormat("[Survey Says #{0}]: You pressed {1} {2}. SURVEY SAYS...", moduleId,
                 ColorNames[int.Parse(Input[0].ToString())],
@@ -198,20 +211,20 @@ public class SurveySays : MonoBehaviour
                     else StartCoroutine(Flash(NumberToFlash(m)));
                     break;
                 case "20":
-                    Debug.LogFormat("[Survey Says #{0}]: The module's defuser difficulty is {1}!", moduleId, difficultyNames[int.Parse(Selected.DefuserDifficulty)]);
-                    StartCoroutine(Flash(difficulty[int.Parse(Selected.DefuserDifficulty)]));
+                    Debug.LogFormat("[Survey Says #{0}]: The module's defuser difficulty is {1}!", moduleId, difficultyNames[Array.IndexOf(repodiffs, SelectedRepo.DefuserDifficulty.ToLower())]);
+                    StartCoroutine(Flash(difficulty[Array.IndexOf(repodiffs, SelectedRepo.DefuserDifficulty.ToLower())]));
                     break;
                 case "21":
-                    Debug.LogFormat("[Survey Says #{0}]: The module's expert difficulty is {1}!", moduleId, difficultyNames[int.Parse(Selected.ExpertDifficulty)]);
-                    StartCoroutine(Flash(difficulty[int.Parse(Selected.ExpertDifficulty)]));
+                    Debug.LogFormat("[Survey Says #{0}]: The module's expert difficulty is {1}!", moduleId, difficultyNames[Array.IndexOf(repodiffs, SelectedRepo.ExpertDifficulty.ToLower())]);
+                    StartCoroutine(Flash(difficulty[Array.IndexOf(repodiffs, SelectedRepo.ExpertDifficulty.ToLower())]));
                     break;
                 case "22":
-                    Debug.LogFormat("[Survey Says #{0}]: The module's TP score is {1}!", moduleId, Selected.TPScore);
-                    StartCoroutine(Flash(NumberToFlash(int.Parse(Selected.TPScore))));
+                    Debug.LogFormat("[Survey Says #{0}]: The module's TP score is {1}!", moduleId, SelectedRepo.TwitchPlays.Score);
+                    StartCoroutine(Flash(NumberToFlash((int)SelectedRepo.TwitchPlays.Score)));
                     break;
                 case "23":
-                    Debug.LogFormat("[Survey Says #{0}]: The module's Time Mode score is {1}!", moduleId, Selected.TimeModeScore);
-                    StartCoroutine(Flash(NumberToFlash(int.Parse(Selected.TimeModeScore))));
+                    Debug.LogFormat("[Survey Says #{0}]: The module's Time Mode score is {1}!", moduleId, SelectedRepo.TimeMode.Score);
+                    StartCoroutine(Flash(NumberToFlash((int)SelectedRepo.TimeMode.Score)));
                     break;
                 case "30":
                     if (Selected.EdgeworkBinary[4] == '1')
@@ -267,6 +280,43 @@ public class SurveySays : MonoBehaviour
             }
             Input = "";
         }
+    }
+
+    internal static List<RepoModule> LocalJson = new List<RepoModule>();
+    internal static List<RepoModule> RepoModules = new List<RepoModule>();
+    IEnumerator FetchModules()
+    {
+        yield return null;
+        Debug.LogFormat("Attempting to load existing file!");
+        if (!File.Exists(Path.Combine(Application.persistentDataPath, "raw.json")))
+        {
+            Debug.LogFormat("Oops, local file doesn't exist. Creating...");
+            File.WriteAllText(Path.Combine(Application.persistentDataPath, "raw.json"), JSON.ToString());
+        }
+        string Json = File.ReadAllText(Path.Combine(Application.persistentDataPath, "raw.json"));
+        LocalJson = JsonConvert.DeserializeObject<List<RepoModule>>(Json);
+        Fetch = new WWW("https://ktane.timwi.de/json/raw");
+        Debug.LogFormat("Attempting to reach the Repository for updates...");
+        yield return Fetch;
+            if (Fetch.error == null)
+            {
+                Debug.Log("JSON successfully fetched!");
+                string Fetched = Fetch.text.Substring(16, Fetch.text.Length - 17);
+                if(Application.isEditor)
+                Debug.Log(Fetched);
+                RepoModules = JsonConvert.DeserializeObject<List<RepoModule>>(Fetched);
+                if (LocalJson != RepoModules)
+                {
+                    Debug.Log("Local JSON appears out of date... Updating local json!");
+                    File.WriteAllText(Path.Combine(Application.persistentDataPath, "raw.json"), Fetched);
+                    LocalJson = RepoModules;
+                }
+            }
+            else
+            {
+                Debug.LogFormat("An error has occurred while fetching modules from the repository: {0}. Using current version.", Fetch.error);
+            }
+        dumb = 0;
     }
     IEnumerator Sink(KMSelectable b)
     {
@@ -555,13 +605,25 @@ public class SurveySays : MonoBehaviour
 
     }
 }
-public class Module
+public class EdgeworkModule
 {
     public string Name;
     public string EdgeworkBinary;
+    public string FullName;
+}
+public class RepoModule
+{
+    public string Name;
     public string DefuserDifficulty;
     public string ExpertDifficulty;
-    public string TPScore;
-    public string TimeModeScore;
-    public string FullName;
+    public Twitch TwitchPlays;
+    public TimeM TimeMode;
+}
+public class Twitch
+{
+    public double Score { get; set; }
+}
+public class TimeM
+{
+    public double Score { get; set; }
 }
