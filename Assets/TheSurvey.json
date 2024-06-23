@@ -111,7 +111,7 @@
 },
 {
  "Name":"FOREIGNEXCHANGERATES",
- "EdgeworkBinary":"00000000",
+ "EdgeworkBinary":"10000000",
  "FullName":"Foreign Exchange Rates"
 },
 {
@@ -121,7 +121,7 @@
 },
 {
  "Name":"MORSEMATICS",
- "EdgeworkBinary":"00000000",
+ "EdgeworkBinary":"10110000",
  "FullName":"Morsematics"
 },
 {
@@ -151,7 +151,7 @@
 },
 {
  "Name":"CRAZYTALK",
- "EdgeworkBinary":"00000000",
+ "EdgeworkBinary":"00000001",
  "FullName":"Crazy Talk"
 },
 {
@@ -161,10 +161,9 @@
 },
 {
  "Name":"TURNTHEKEY",
- "EdgeworkBinary":"00000000",
+ "EdgeworkBinary":"00000001",
  "FullName":"Turn The Key"
-}
-,
+},
 {
  "Name":"PLUMBING",
  "EdgeworkBinary":"11010000",
@@ -472,7 +471,7 @@
 },
 {
  "Name":"BITWISEOPERATIONS",
- "EdgeworkBinary":"11110001",
+ "EdgeworkBinary":"11111001",
  "FullName":"Bitwise Operations"
 },
 {
@@ -507,7 +506,7 @@
 },
 {
  "Name":"ICECREAM",
- "EdgeworkBinary":"10110100",
+ "EdgeworkBinary":"10110101",
  "FullName":"Ice Cream"
 },
 {
@@ -519,5 +518,250 @@
  "Name":"YAHTZEE",
  "EdgeworkBinary":"11111100",
  "FullName":"Yahtzee"
+}
+{
+ "Name":"XRAY",
+ "EdgeworkBinary":"00000000",
+ "FullName":"X-Ray"
+},
+{
+ "Name":"COLORMORSE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Color Morse"
+},
+{
+ "Name":"MASTERMINDSIMPLE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Mastermind Simple"
+},
+{
+ "Name":"MASTERMINDCRUEL",
+ "EdgeworkBinary":"11111001",
+ "FullName":"Mastermind Cruel"
+},
+{
+ "Name":"GRIDLOCK",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Gridlock"
+},
+{
+ "Name":"BIGCIRCLE",
+ "EdgeworkBinary":"11111110",
+ "FullName":"Big Circle"
+},
+{
+ "Name":"MORSEAMAZE",
+ "EdgeworkBinary":"11111111",
+ "FullName":"Morse-A-Maze"
+},
+{
+ "Name":"COLOREDSWITCHES",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Colored Switches"
+},
+{
+ "Name":"PERPLEXINGWIRES",
+ "EdgeworkBinary":"11110010",
+ "FullName":"Perplexing Wires"
+},
+{
+ "Name":"MONSPLODETRADINGCARDS",
+ "EdgeworkBinary":"10110000",
+ "FullName":"Monsploder Trading Cards"
+},
+{
+ "Name":"GAMEOFLIFESIMPLE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Game of Life Simple"
+},
+{
+ "Name":"GAMEOFLIFECRUEL",
+ "EdgeworkBinary":"11111001",
+ "FullName":"Game of Life Cruel"
+},
+{
+ "Name":"NONOGRAM",
+ "EdgeworkBinary":"00010000",
+ "FullName":"Nonogram"
+},
+{
+ "Name":"SET",
+ "EdgeworkBinary":"00000000",
+ "FullName":"S.E.T."
+},
+{
+ "Name":"PAINTING",
+ "EdgeworkBinary":"11100000",
+ "FullName":"Painting"
+},
+{
+ "Name":"COLORGENERATOR",
+ "EdgeworkBinary":"00010000",
+ "FullName":"Color Generator"
+},
+{
+ "Name":"SYMBOLCYCLE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Symbol Cycle"
+},
+{
+ "Name":"HUNTING",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Hunting"
+},
+{
+ "Name":"EXTENDEDPASSWORD",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Extended Password"
+},
+{
+ "Name":"CURRICULUM",
+ "EdgeworkBinary":"11110101",
+ "FullName":"Curriculum"
+},
+{
+ "Name":"BRAILLE",
+ "EdgeworkBinary":"00010000",
+ "FullName":"Braille"
+},
+{
+ "Name":"MAFIA",
+ "EdgeworkBinary":"11110111",
+ "FullName":"Mafia"
+},
+{
+ "Name":"FESTIVEPIANOKEYS",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Festive Piano Keys"
+},
+{
+ "Name":"FLAGS",
+ "EdgeworkBinary":"01110000",
+ "FullName":"Flags"
+},
+{
+ "Name":"TIMEZONE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Timezone"
+},
+{
+ "Name":"POLYHEDRALMAZE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Polyhedral Maze"
+},
+{
+ "Name":"SYMBOLICCOORDINATES",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Symbolic Coordinates"
+},
+{
+ "Name":"POKER",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Poker"
+},
+{
+ "Name":"SONICTHEHEDGEHOG",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Sonic the Hedgehog"
+},
+{
+ "Name":"POETRY",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Poetry"
+},
+{
+ "Name":"BUTTONSEQUENCE",
+ "EdgeworkBinary":"00000001",
+ "FullName":"Button Sequence"
+},
+{
+ "Name":"ALGEBRA",
+ "EdgeworkBinary":"11111000",
+ "FullName":"Algebra"
+},
+{
+ "Name":"VISUALIMPAIRMENT",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Visual Impairment"
+},
+{
+ "Name":"THEJUKEBOX",
+ "EdgeworkBinary":"00000000",
+ "FullName":"The Jukebox"
+},
+{
+ "Name":"IDENTITYPARADE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Identity Parade"
+},
+{
+ "Name":"MAINTENANCE",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Maintenance"
+},
+{
+ "Name":"BLINDMAZE",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Blind Maze"
+},
+{
+ "Name":"BACKGROUNDS",
+ "EdgeworkBinary":"11100000",
+ "FullName":"Backgrounds"
+},
+{
+ "Name":"MORTALKOMBAT",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Mortal Kombat"
+},
+{
+ "Name":"MASHEMATICS",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Mashematics"
+},
+{
+ "Name":"FAULTYBACKGROUNDS",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Faulty Backgrounds"
+},
+{
+ "Name":"RADIATOR",
+ "EdgeworkBinary":"11110000",
+ "FullName":"Radiator"
+},
+{
+ "Name":"MODERNCIPHER",
+ "EdgeworkBinary":"11010001",
+ "FullName":"Modern Cipher"
+},
+{
+ "Name":"LEDGRID",
+ "EdgeworkBinary":"00000000",
+ "FullName":"LED Grid"
+},
+{
+ "Name":"SINK",
+ "EdgeworkBinary":"01110010",
+ "FullName":"Sink"
+},
+{
+ "Name":"THEIPHONE",
+ "EdgeworkBinary":"10110001",
+ "FullName":"The iPhone"
+},
+{
+ "Name":"WASTEMANAGEMENT",
+ "EdgeworkBinary":"11110101",
+ "FullName":"Waste Management"
+},
+{
+ "Name":"HUMANRESOURCES",
+ "EdgeworkBinary":"00000000",
+ "FullName":"Human Resources"
+},
+{
+ "Name":"SKYRIM",
+ "EdgeworkBinary":"10010000",
+ "FullName":"Skyrim"
 }
 ]
